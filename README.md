@@ -20,3 +20,9 @@ Komponen Yang Digunakan :
 RANGKAIAN SKEMATIK
 
 ![image](https://user-images.githubusercontent.com/122074934/210940131-a2ef8fa8-b8a0-45a2-b19d-1aa8a427bc8d.png)
+
+PROGRAM 
+
+![image](https://user-images.githubusercontent.com/122074934/210940258-d1baf551-a38c-426c-acac-88edba91ff6c.png)
+![image](https://user-images.githubusercontent.com/122074934/210940283-9a02e882-23d3-4ef6-9bc6-8179b66ad2e0.png)
+
