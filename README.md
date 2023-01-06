@@ -17,3 +17,6 @@ Komponen Yang Digunakan :
 
 5. LCD 16X2 sebagai keluaran
 
+RANGKAIAN SKEMATIK
+
+![image](https://user-images.githubusercontent.com/122074934/210940131-a2ef8fa8-b8a0-45a2-b19d-1aa8a427bc8d.png)
