@@ -5,8 +5,8 @@ LiquidCrystal_I2C lcd(0x27, 16, 2);
 #define trigPin 9
 #define echoPin 10
 #define relay 8
-#define buzzer 1
 int ketinggian;
+
 void setup(){
   Serial.begin (9600);
 
@@ -16,7 +16,6 @@ void setup(){
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
   pinMode (relay,OUTPUT);
-  pinMode (buzzer,OUTPUT);
   digitalWrite(relay, LOW);
 }
 
@@ -31,6 +30,7 @@ void loop(){
   distance = (duration/2) / 29.1;
   Serial.print(distance);
   Serial.println(" cm");
+  
   lcd.setCursor(0,0);
   lcd.print("Ketingian Air");
   lcd.setCursor(0,1); 
@@ -39,18 +39,14 @@ void loop(){
   lcd.print("cm");
   delay(500);
   lcd.clear();
+  
   ketinggian = 14-distance;
 if(ketinggian >= 13){
     digitalWrite(relay, HIGH);
     delay (3000);
-    digitalWrite(buzzer,HIGH);    delay(62.5);    digitalWrite(buzzer,LOW);     delay(62.5);
-    digitalWrite(buzzer,HIGH);    delay(62.5);    digitalWrite(buzzer,LOW);     delay(62.5);
-    digitalWrite(buzzer,HIGH);    delay(62.5);    digitalWrite(buzzer,LOW);     delay(62.5);
-    digitalWrite(buzzer,HIGH);    delay(62.5);    digitalWrite(buzzer,LOW);     delay(62.5);  
   }
  if(ketinggian < 3){
     digitalWrite(relay,LOW);
     delay (500);
-    digitalWrite(buzzer,LOW);
   }
 }
